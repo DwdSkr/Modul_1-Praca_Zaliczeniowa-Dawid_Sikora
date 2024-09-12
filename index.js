@@ -271,15 +271,16 @@ function paginationCreate() {
 	body.appendChild(mainContainer);
 }
 body.addEventListener('keyup', playVoice);
-const vaderVoice = new Audio('../sounds/vader.mp3');
-const yodaVoice = new Audio('../sounds/yoda.mp3');
+
 let word = '';
 function playVoice(letter) {
 	word += letter.key;
 	if (word.toLowerCase().includes('vader')) {
+		const vaderVoice = new Audio('../sounds/vader.mp3');
 		vaderVoice.play();
 		word = '';
 	} else if (word.toLowerCase().includes('yoda')) {
+		const yodaVoice = new Audio('../sounds/yoda.mp3');
 		yodaVoice.play();
 		word = '';
 	}
