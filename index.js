@@ -280,7 +280,7 @@ function playVoice(letter) {
 		vaderVoice.play();
 		word = '';
 	} else if (word.toLowerCase().includes('yoda')) {
-		const yodaVoice = new Audio('../sounds/yoda.mp3');
+		const yodaVoice = new Audio('./sounds/yoda.mp3');
 		yodaVoice.play();
 		word = '';
 	}
