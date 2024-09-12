@@ -276,7 +276,7 @@ let word = '';
 function playVoice(letter) {
 	word += letter.key;
 	if (word.toLowerCase().includes('vader')) {
-		const vaderVoice = new Audio('../sounds/vader.mp3');
+		const vaderVoice = new Audio('./sounds/vader.mp3');
 		vaderVoice.play();
 		word = '';
 	} else if (word.toLowerCase().includes('yoda')) {
